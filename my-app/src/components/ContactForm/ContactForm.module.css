@@ -1,0 +1,30 @@
+.button {
+  padding: 15px 15px;
+  border-radius: 10px;
+  background-color: pink;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-color: rgb(218, 122, 122);
+  margin-bottom: 15px;
+}
+.button:active,
+.button:focus {
+  border-color: rgb(218, 122, 122);
+  outline: transparent;
+}
+
+.title {
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+.button {
+  height: 30px;
+  border-radius: 10px;
+  background-color: pink;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-color: rgb(218, 122, 122);
+}
+.button:active,
+.button:focus {
+  border-color: rgb(218, 122, 122);
+  outline: transparent;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.content {
+  font-weight: 700;
+}
