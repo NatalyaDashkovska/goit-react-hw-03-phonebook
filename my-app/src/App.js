@@ -18,7 +18,7 @@ class App extends Component {
       id: uuidv4(),
       number,
     };
-    const oldCard = this.state.contacts.find(newCard => name === newCard.text);
+    const oldCard = this.state.contacts.find(newCard => name.toLowerCase() === newCard.text.toLowerCase());
 
     if (oldCard) {
       alert(`${oldCard.text}  is already in contacts`);
@@ -42,7 +42,7 @@ class App extends Component {
   componentDidMount() {
     const contacts = localStorage.getItem(`contacts`);
     const parsedContacts = JSON.parse(contacts);
-    this.setState({contacts: parsedContacts})
+    if (parsedContacts) {this.setState({contacts: parsedContacts})}
   }
   componentDidUpdate(prevProps, prevState) {
     if (this.state.contacts !== prevState.contacts) {
